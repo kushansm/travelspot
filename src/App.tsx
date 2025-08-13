@@ -5,6 +5,7 @@ import { Hero } from './components/Hero'
 import Destinations from './components/Destinations'
 import Packages from './components/Packages'
 import { Footer } from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Hero />
     <Destinations/>
     <Packages/>
+    <ContactForm/>
     <Footer/>
     </>
     

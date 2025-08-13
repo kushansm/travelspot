@@ -49,8 +49,8 @@ const destinations: Destination [] = [
 
 export const Destinations = () => {
   return (
-    <section className="py-10 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full  py-10 bg-gray-50">
+      <div className="w-full h-auto px-4">
         <h2 className="texts-center text-3xl font-bold text-gray-800 mb-6">
           Popular Destinations
         </h2>

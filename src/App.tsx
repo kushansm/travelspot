@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import { Hero } from './components/Hero'
 import Destinations from './components/Destinations'
 import Packages from './components/Packages'
+import { Footer } from './components/Footer'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Hero />
     <Destinations/>
     <Packages/>
+    <Footer/>
     </>
     
   )

@@ -18,13 +18,13 @@ const packages: Package[] = [
   { id: 2, 
     name: "Cultural Explorer",
     image: "src/assets/packages/cultural.jpg", 
-    price: 699, 
+    price: 599, 
     duration: "7 days / 6 nights" },
 
   { id: 3, 
     name: "Adventure Trek",
     image: "src/assets/packages/adventure.jpg",
-    price: 599, 
+    price: 699, 
     duration: "6 days / 5 nights" },
 
   { id: 4, 

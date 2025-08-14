@@ -4,6 +4,7 @@ import Destinations from './components/Destinations.tsx';
 import Packages from './components/Packages.tsx';
 import { Footer } from './components/Footer.tsx';
 import ContactForm from './components/ContactForm.tsx';
+import { Gallery } from './components/Gallery.tsx'; 
 
 import './index.css'; 
 
@@ -15,6 +16,11 @@ function App() {
       {/* Hero Section */}
       <section id="hero">
         <Hero />
+      </section>
+
+      {/* About + Gallery Section */}
+      <section id="gallery">
+        <Gallery />
       </section>
 
       {/* Destinations Section */}

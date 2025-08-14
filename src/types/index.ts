@@ -13,3 +13,9 @@ export interface Package {
   duration: string;
 }
 
+export type GalleryItem = {
+  id: number;
+  title: string;
+  image: string;
+
+};

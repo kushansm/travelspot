@@ -5,6 +5,7 @@ type NavLink = { name: string; href: string };
 
 const LINKS: NavLink[] = [
   { name: "Home", href: "#hero" },
+  { name: "Gallery", href: "#gallery" },
   { name: "Destinations", href: "#destinations" },
   { name: "Packages", href: "#packages" },
   { name: "Contact", href: "#contact" },
@@ -72,13 +73,10 @@ const Navbar: React.FC = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-black border-t border-gray-800">
+        <div className="md:hidden bg-black border-t border-gray-800 z-50">
           <ul className="flex flex-col">
             {LINKS.map((link) => (
-              <li
-                key={link.name}
-                className="border-b border-gray-800 last:border-b-0"
-              >
+              <li key={link.name} className="border-b border-gray-800">
                 <a
                   href={link.href}
                   className="block px-6 py-3 text-white hover:text-yellow-400 transition-colors"

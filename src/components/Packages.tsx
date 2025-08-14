@@ -1,47 +1,14 @@
 import React from "react";
-
-interface Package {
-  id: number;
-  image: string;
-  name: string;
-  price: number; 
-  duration: string; 
-}
-
-const packages: Package[] = [
-  { id: 1,
-    name: "Beach Paradise",
-    image: "src/assets/packages/beach.jpg",
-    price: 499, 
-    duration: "5 days / 4 nights" },
-
-  { id: 2, 
-    name: "Cultural Explorer",
-    image: "src/assets/packages/cultural.jpg", 
-    price: 599, 
-    duration: "7 days / 6 nights" },
-
-  { id: 3, 
-    name: "Adventure Trek",
-    image: "src/assets/packages/adventure.jpg",
-    price: 699, 
-    duration: "6 days / 5 nights" },
-
-  { id: 4, 
-    name: "Luxury Relaxation",
-    image: "src/assets/packages/luxury.jpg",
-    price: 999, 
-    duration: "5 days / 4 nights" },
-];
+import { packages } from "../data/packages";
 
 const Packages: React.FC = () => {
   return (
-    <section className="py-12 bg-white">
-      <div className="w-full  px-4">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+    <section className="py-12 bg-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           Travel Packages
         </h2>
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center text-gray-300 mb-10">
           Choose from our exclusive travel packages tailored for you.
         </p>
 
@@ -49,23 +16,27 @@ const Packages: React.FC = () => {
           {packages.map((pkg) => (
             <div
               key={pkg.id}
-              className="border rounded-lg p-6 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col justify-between"
+              className="bg-gray-900 border border-gray-800 rounded-lg p-4 md:p-6 shadow-md hover:shadow-2xl transition-shadow duration-300 flex flex-col justify-between"
             >
               <div>
                 {/* Image */}
-              <div className="w-full h-120 overflow-hidden">
-                <img
-                  src={pkg.image}
-                  alt={pkg.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-                <h3 className="text-xl font-semibold mb-2">{pkg.name}</h3>
-                <p className="text-gray-700 mb-4">{pkg.duration}</p>
+                <div className="w-full h-48 md:h-56 lg:h-60 overflow-hidden rounded-lg">
+                  <img
+                    src={pkg.image}
+                    alt={pkg.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <h3 className="text-xl md:text-2xl font-semibold mb-2 text-white mt-4">
+                  {pkg.name}
+                </h3>
+                <p className="text-gray-300 mb-4">{pkg.duration}</p>
               </div>
               <div>
-                <p className="text-2xl font-bold text-blue-600 mb-4">${pkg.price}</p>
-                <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors duration-300">
+                <p className="text-2xl md:text-3xl font-bold text-yellow-400 mb-4">
+                  ${pkg.price}
+                </p>
+                <button className="w-full bg-yellow-400 text-black py-2 rounded-lg hover:bg-yellow-500 transition-colors duration-300">
                   View Details
                 </button>
               </div>

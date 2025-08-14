@@ -1,4 +1,4 @@
-import type { Destination } from "../types";
+import type { Destination } from "../types/index.ts";
 
 export const destinations: Destination[] = [
   {

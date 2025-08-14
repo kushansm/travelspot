@@ -1,6 +1,5 @@
 import React from "react";
-import { destinations } from "../data/destinations";
-
+import { destinations } from "../data/destinations.ts";
 const Destinations: React.FC = () => {
   return (
     <section className="w-full py-10 bg-black">

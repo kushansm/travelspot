@@ -1,4 +1,4 @@
-import { type Package } from "../types";
+import type { Package } from "../types/index.ts";
 
 export const packages: Package[] = [
   {

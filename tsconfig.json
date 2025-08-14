@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["dom", "es2017"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
+    "target": "ESNext",
+    "module": "Node16",
+    "moduleResolution": "Node16",
     "jsx": "react-jsx",
-    "skipLibCheck": true
-  }
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "eslint.config.js"]
 }

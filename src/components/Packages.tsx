@@ -1,5 +1,5 @@
 import React from "react";
-import { packages } from "../data/packages";
+import { packages } from "../data/packages.ts";
 
 const Packages: React.FC = () => {
   return (

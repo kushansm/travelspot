@@ -1,6 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { destinations } from "../data/destinations.ts";
-const Destinations = () => {
-    return (_jsx("section", { className: "w-full py-10 bg-black", children: _jsxs("div", { className: "max-w-7xl mx-auto px-2 sm:px-4 lg:px-6", children: [_jsx("h2", { className: "text-center text-3xl font-bold text-white mb-6", children: "Popular Destinations" }), _jsx("div", { className: "grid sm:grid-cols-2 md:grid-cols-3 gap-6", children: destinations.map((dest) => (_jsxs("div", { className: "bg-gray-900 rounded-lg shadow-md overflow-hidden flex flex-col border border-gray-800", children: [_jsx("div", { className: "w-auto h-120 overflow-hidden", children: _jsx("img", { src: dest.image, alt: dest.name, className: "w-full h-full object-cover hover:scale-105 transition-transform duration-500" }) }), _jsxs("div", { className: "p-4 flex flex-col flex-1", children: [_jsx("h3", { className: "text-lg font-semibold mb-2 text-white", children: dest.name }), _jsx("p", { className: "text-gray-300 text-sm flex-1 overflow-hidden text-ellipsis line-clamp-3", children: dest.description }), _jsx("button", { className: "mt-4 px-4 py-2 bg-yellow-400 text-black rounded-lg hover:bg-yellow-500 transition-colors duration-300", children: "Learn More" })] })] }, dest.id))) })] }) }));
-};
-export default Destinations;

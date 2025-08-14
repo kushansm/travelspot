@@ -8,10 +8,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowJs": true,
+    "allowJs": false,
     "noEmit": true,
     "allowImportingTsExtensions": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "eslint.config.js"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

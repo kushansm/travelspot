@@ -1,6 +1,6 @@
 import React from "react";
 import { destinations } from "../data/destinations.ts";
-const Destinations: React.FC = () => {
+const Destinations = () => {
   return (
     <section className="w-full py-10 bg-black">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">

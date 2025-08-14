@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "../App.css"; // If you have shared styles
 
 export const ContactForm = () => {
   const [firstName, setFirstName] = useState("");

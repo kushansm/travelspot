@@ -6,11 +6,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
+import NineArchImg from "../assets/ninearch.jpg";
+import KandyImg from "../assets/kandy.jpg";
+import BeachImg from "../assets/beach.jpg";
+import SigiriyaImg from "../assets/sigiriya.jpg";
+
 const images: string[] = [
-  "src/assets/ninearch.jpg",
-  "src/assets/kandy.jpg",
-  "src/assets/beach.jpg",
-  "src/assets/sigiriya.jpg",
+  NineArchImg,
+  KandyImg,
+  BeachImg,
+  SigiriyaImg,
 ];
 
 export const Hero = () => {

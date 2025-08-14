@@ -6,6 +6,7 @@ export  interface Destination {
 }
 
 export interface Package {
+  description: string;
   id: number;
   name: string;
   image: string;

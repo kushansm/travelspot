@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-type NavLink = { name: string; href: string };
-
 import logoImg from "../assets/logo/logo.png";
 
+type NavLink = { name: string; href: string };
 
 const LINKS: NavLink[] = [
   { name: "Home", href: "#hero" },
@@ -18,19 +17,22 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-black backdrop-blur-sm shadow z-50">
       <div className="max-w-8xl mx-auto px-8 py-3 flex items-center justify-between">
         {/* Logo + Brand */}
-        <div className="flex items-center gap-3">
-          {/* White circular layer behind logo */}
-          <div  className="bg-white hover:bg-yellow-400 p-2 rounded-full">
-            <img src={logoImg} alt="Ceylon Guide Logo" className="w-10 h-10 object-contain" />
-
+        <a
+          href="#hero"
+          className="flex items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
+          <div className="bg-white hover:bg-yellow-400 p-2 rounded-full">
+            <img
+              src={logoImg}
+              alt="Ceylon Guide Logo"
+              className="w-10 h-10 object-contain"
+            />
           </div>
-          <a
-            href="#hero"
-            className="text-xl md:text-2xl font-bold text-white hover:text-yellow-400  transition-colors"
-          >
+          <span className="text-xl md:text-2xl font-bold text-white hover:text-yellow-400 transition-colors">
             Ceylon Guide
-          </a>
-        </div>
+          </span>
+        </a>
 
         {/* Desktop menu */}
         <ul className="hidden md:flex gap-8">

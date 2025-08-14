@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="bg-black text-white py-8">
       {/* Main Section */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start px-6 md:px-10 gap-6 md:gap-0">
+      <div className="max-w-8xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start px-6 md:px-10 gap-6 md:gap-0">
         {/* Company Info */}
         <div className="text-center md:text-left text-sm md:text-base">
           <h3 className="font-semibold text-lg mb-1">Ceylon Guide (Pvt) Ltd</h3>
@@ -47,7 +47,7 @@ export const Footer = () => {
       </div>
 
       {/* Licence and Credits */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center text-xs md:text-sm mt-8 px-6 md:px-10 border-t border-gray-800 pt-4 gap-2 md:gap-0 text-center">
+      <div className="max-w-8xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center text-xs md:text-sm mt-8 px-6 md:px-10 border-t border-gray-800 pt-4 gap-2 md:gap-0 text-center">
         <p>© 2025 Ceylon Guide. All rights reserved.</p>
         <p>Photos by Felix Mooneeram & Serge Kutuzov on Unsplash</p>
       </div>

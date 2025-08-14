@@ -43,7 +43,7 @@ export const ContactForm = () => {
     <div className="bg-black text-white">
       {/* Heading */}
       <section className="px-[7vw] py-8">
-        <h2 className="text-2xl mb-2 cursor-pointer transition-colors hover:text-orange-500 hover:underline">
+        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-center">
           How to reach us
         </h2>
         
@@ -150,12 +150,14 @@ export const ContactForm = () => {
           </div>
 
           {/* Submit */}
+          <div className="flex justify-center mt-4">
           <button
             type="submit"
-            className="bg-orange-500 text-white px-6 py-2 rounded font-bold self-end hover:bg-yellow-300 hover:text-black transition"
-          >
-            SUBMIT
+            className="bg-orange-500 text-white px-6 py-2 rounded font-bold hover:bg-yellow-300 hover:text-black transition"
+           >
+          SUBMIT
           </button>
+        </div>
         </form>
 
         {/* Map Section */}

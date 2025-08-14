@@ -10,7 +10,7 @@ export const Gallery: React.FC = () => {
         What You Can Enjoy Here
       </h2>
 
-      <div className="grid grid-cols-4 auto-rows-auto gap-2 h-[calc(100%-4rem)] overflow-hidden">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 auto-rows-auto gap-2">
         {shuffledItems.map((item, index) => (
           <div
             key={item.id}
@@ -23,8 +23,13 @@ export const Gallery: React.FC = () => {
               alt={item.title}
               className="w-full h-full object-contain rounded-lg shadow-lg transition-transform group-hover:scale-105"
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <span className="bg-black bg-opacity-80 text-white text-lg font-bold px-5 py-2 rounded border-2 border-white">
+            {/* Title overlay */}
+            <div className="absolute inset-0 flex items-center justify-center transition-opacity">
+              {/* Desktop: show on hover, Mobile: always visible */}
+              <span className="hidden md:inline bg-black bg-opacity-80 text-white text-lg font-bold px-5 py-2 rounded border-2 border-white opacity-0 group-hover:opacity-100 transition-opacity">
+                {item.title}
+              </span>
+              <span className="inline md:hidden bg-black bg-opacity-80 text-white text-lg font-bold px-5 py-2 rounded border-2 border-white">
                 {item.title}
               </span>
             </div>

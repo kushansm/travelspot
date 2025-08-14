@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-// Import images directly
 import NineArch from "../assets/ninearch.jpg";
 import Kandy from "../assets/kandy.jpg";
 import Beach from "../assets/beach.jpg";
